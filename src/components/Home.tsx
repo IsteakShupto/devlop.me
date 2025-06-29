@@ -10,7 +10,7 @@ export default function Home() {
     <>
       <div className="mb-40" id="home">
         <div className="text-center text-2xl md:text-left md:text-3xl lg:text-7xl mt-24 lg:mt-38">
-          <p>
+          <p className="duration-300">
             Trusted{" "}
             <span className="bg-black text-white rounded-lg">Partner</span> for
           </p>
@@ -26,8 +26,8 @@ export default function Home() {
             Your trusted partner for strategy, design, and dev.
           </p>
 
-          <button className="flex items-center gap-2 border-2 rounded-4xl py-2 pr-1.5 cursor-pointer w-fit mx-auto md:ml-96 mt-12 md:mt-36 lg:mt-12 lg:ml-0">
-            <div className="border-2 h-10 w-10 p-0.5 rounded-full flex justify-center items-center">
+          <button className="shadow-md active:scale-95 transition-transform duration-150 flex items-center gap-2 border-2 rounded-4xl py-2 pr-1.5 cursor-pointer w-fit mx-auto md:ml-96 mt-12 md:mt-36 lg:mt-12 lg:ml-0">
+            <div className="animate-bounce border-2 h-10 w-10 p-0.5 rounded-full flex justify-center items-center">
               {theme === "light" ? (
                 <img src={Call} alt="Call icon" />
               ) : (

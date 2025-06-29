@@ -1,5 +1,4 @@
 import ArrowDown from "../assets/icons/arrow-right.svg";
-import ContactBg from "../assets/images/contact-bg.svg";
 import Call from "../assets/icons/call.svg";
 import SendWhite from "../assets/icons/send-white.svg";
 import MailWhite from "../assets/icons/mail-white.svg";
@@ -18,11 +17,11 @@ export default function Contact() {
 
   return (
     <>
-      <section className="relative -mt-28">
+      <section className="relative -mt-28 bg-[url('./assets/images/contact-bg.svg')] bg-bottom bg-no-repeat bg-cover min-h-screen w-full">
         <div className="325px sm:w-[600px] md:w-[750px] lg:w-[1000px] xl:w-[1200px] mx-auto font-grotesque overflow-hidden flex flex-col xl:flex-row items-center">
           <div>
             <div className="w-fit mx-auto xl:w-auto flex items-center justify-start pt-36 px-10 lg:px-0 lg:pt-50">
-              <div className="border-2 h-10 w-10 p-0.5 rounded-full flex justify-center items-center">
+              <div className="animate-bounce border-2 h-10 w-10 p-0.5 rounded-full flex justify-center items-center">
                 {theme === "light" ? (
                   <img
                     src={ArrowDown}
@@ -55,7 +54,7 @@ export default function Contact() {
               </p>
             </div>
 
-            <button className="flex items-center gap-2 border-2 rounded-4xl py-2 pr-1.5 cursor-pointer w-fit mx-auto mt-12 lg:mt-8 xl:ml-0">
+            <button className="shadow-md active:scale-95 transition-transform duration-150 flex items-center gap-2 border-2 rounded-4xl py-2 pr-1.5 cursor-pointer w-fit mx-auto mt-12 lg:mt-8 xl:ml-0">
               <div className="border-2 h-10 w-10 p-0.5 rounded-full flex justify-center items-center">
                 {theme === "light" ? (
                   <img src={Call} alt="Call icon" />
@@ -71,23 +70,24 @@ export default function Contact() {
             <input
               type="text"
               placeholder="Enter your name"
-              className="border-b border-neutral-600 pb-4 mb-10 outline-none w-full"
+              className="border-b border-neutral-600 pb-4 mb-10 outline-none w-full focus:border-teal-400
+              "
             />
 
             <input
               type="email"
               placeholder="Your email address"
-              className="border-b border-neutral-600 pb-4 mb-10 outline-none w-full"
+              className="border-b border-neutral-600 pb-4 mb-10 outline-none w-full focus:border-teal-400"
             />
 
             <input
               type="text"
               placeholder="Describe your project"
-              className="border-b border-neutral-600 pb-4 outline-none w-full"
+              className="border-b border-neutral-600 pb-4 outline-none w-full focus:border-teal-400"
             />
 
             <div className="flex flex-col md:flex-row items-center mt-10 gap-4">
-              <button className="flex items-center gap-2 border-2 rounded-4xl py-2 pr-1.5 cursor-pointer w-fit">
+              <button className="shadow-md active:scale-95 transition-transform duration-150 flex items-center gap-2 border-2 rounded-4xl py-2 pr-1.5 cursor-pointer w-fit">
                 <div className="border-2 h-10 w-10 p-0.5 rounded-full flex justify-center items-center">
                   <img src={SendWhite} alt="Send icon" />
                 </div>
@@ -96,7 +96,7 @@ export default function Contact() {
 
               <p>Or</p>
 
-              <button className="flex items-center gap-2 border-2 rounded-4xl py-2 pr-1.5 cursor-pointer w-fit">
+              <button className="shadow-md active:scale-95 transition-transform duration-150 flex items-center gap-2 border-2 rounded-4xl py-2 pr-1.5 cursor-pointer w-fit">
                 <div className="border-2 h-10 w-10 p-0.5 rounded-full flex justify-center items-center">
                   <img src={MailWhite} alt="Send icon" />
                 </div>
@@ -125,11 +125,6 @@ export default function Contact() {
             </div>
           </div>
         </div>
-        <img
-          src={ContactBg}
-          alt="Hero background"
-          className="absolute inset-0 h-[130vh] w-full object-cover -z-1 lg:bottom-0"
-        />
       </section>
     </>
   );

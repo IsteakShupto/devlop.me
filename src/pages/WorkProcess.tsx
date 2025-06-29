@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import ArrowDownWhite from "../assets/icons/arrow-down-white.svg";
 import WorkProcessCard from "../components/WorkProcessCard";
 
@@ -25,6 +26,16 @@ const WorkProcessCardItems = [
 ];
 
 export default function WorkProcess() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      setLoading(false);
+    }, 2000);
+
+    return () => clearTimeout(timeout);
+  }, []);
+
   return (
     <>
       <section
@@ -33,7 +44,7 @@ export default function WorkProcess() {
       >
         <div className="w-[225px] mx-auto mb-10 xl:w-auto xl:mb-0">
           <div className="xl:absolute xl:left-20 flex items-center justify-start">
-            <div className="border-2 h-10 w-10 p-0.5 rounded-full flex justify-center items-center">
+            <div className="animate-bounce border-2 h-10 w-10 p-0.5 rounded-full flex justify-center items-center">
               <img src={ArrowDownWhite} alt="Arrow down icon" className="" />
             </div>
             <p className="border-2 py-2 px-4.5 rounded-3xl">Work Process</p>
@@ -44,17 +55,25 @@ export default function WorkProcess() {
           <h1>My Work Process</h1>
         </div>
 
+        {loading === true && (
+          <div className="flex justify-center items-center w-full min-h-[220px] xl:mt-50">
+            <div className="w-10 h-10 border-4 border-t-white border-b-white border-r-transparent rounded-full animate-spin mr-4" />{" "}
+            Data loading, please wait. . .
+          </div>
+        )}
+
         <div className="grid xl:grid-cols-2 mt-5 xl:mt-20 p-10 gap-2">
-          {WorkProcessCardItems.map((WorkProcessCardItem) => {
-            return (
-              <WorkProcessCard
-                key={WorkProcessCardItem.id}
-                id={WorkProcessCardItem.id}
-                title={WorkProcessCardItem.title}
-                desc={WorkProcessCardItem.desc}
-              />
-            );
-          })}
+          {loading === false &&
+            WorkProcessCardItems.map((WorkProcessCardItem) => {
+              return (
+                <WorkProcessCard
+                  key={WorkProcessCardItem.id}
+                  id={WorkProcessCardItem.id}
+                  title={WorkProcessCardItem.title}
+                  desc={WorkProcessCardItem.desc}
+                />
+              );
+            })}
         </div>
       </section>
     </>

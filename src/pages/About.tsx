@@ -1,5 +1,4 @@
 import ArrowDownWhite from "../assets/icons/arrow-right.svg";
-import AboutBg from "../assets/images/aboutbg.svg";
 import AboutGroup from "../assets/images/about-group.svg";
 import { useContext } from "react";
 import { ThemeContext } from "../context/ThemeContext";
@@ -10,15 +9,13 @@ export default function About() {
 
   return (
     <>
-      <section className="relative -mt-16" id="about">
-        <img
-          src={AboutBg}
-          alt="Hero background"
-          className="absolute inset-0 min-h-screen w-full object-cover -z-1 lg:top-0"
-        />
+      <section
+        className="relative -mt-16 bg-[url('./assets/images/aboutbg.svg')] bg-top bg-no-repeat bg-cover min-h-screen w-full"
+        id="about"
+      >
         <div className="325px sm:w-[600px] md:w-[750px] lg:w-[1000px] xl:w-[1100px] mx-auto font-grotesque overflow-hidden">
           <div className="325px sm:w-[600px] md:w-[750px] lg:w-[1000px] flex items-center justify-end pt-36 px-10 lg:px-0 lg:pt-50">
-            <div className="border-2 h-10 w-10 p-0.5 rounded-full flex justify-center items-center">
+            <div className="animate-bounce border-2 h-10 w-10 p-0.5 rounded-full flex justify-center items-center">
               {theme === "light" ? (
                 <img
                   src={ArrowDownWhite}

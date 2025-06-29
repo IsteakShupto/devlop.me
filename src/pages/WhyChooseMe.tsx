@@ -3,6 +3,7 @@ import ArrowLeftWhite from "../assets/icons/arrow-left-white.svg";
 import ArrowRightWhite from "../assets/icons/arrow-right-white.svg";
 import WhyChooseMeCard from "../components/WhyChooseMeCard";
 import ReactIcon from "../assets/icons/react.svg";
+import { useEffect, useState } from "react";
 
 const AboutCardItems = [
   {
@@ -23,13 +24,23 @@ const AboutCardItems = [
 ];
 
 export default function WhyChooseMe() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      setLoading(false);
+    }, 2000);
+
+    return () => clearTimeout(timeout);
+  }, []);
+
   return (
     <>
       <section className="bg-black text-white rounded-4xl p-10" id="portfolio">
         <div className="lg:text-left lg:flex justify-between items-center">
           <div>
             <div className="flex items-center">
-              <div className="border-2 h-10 w-10 p-0.5 rounded-full flex justify-center items-center">
+              <div className="animate-bounce border-2 h-10 w-10 p-0.5 rounded-full flex justify-center items-center">
                 <img src={ArrowDownWhite} alt="Arrow down icon" />
               </div>
               <p className="border-2 py-2 px-4.5 rounded-3xl">Why choose me</p>
@@ -57,17 +68,24 @@ export default function WhyChooseMe() {
         </div>
 
         <div className="flex flex-col lg:flex-row justify-between gap-5 mt-5 mb-10">
-          {AboutCardItems.map((aboutCardItem) => {
-            return (
-              <WhyChooseMeCard
-                key={aboutCardItem.id}
-                id={aboutCardItem.id}
-                icon={ReactIcon}
-                text={aboutCardItem.text}
-                desc={aboutCardItem.desc}
-              />
-            );
-          })}
+          {loading === true && (
+            <div className="flex justify-center items-center w-full min-h-[220px]">
+              <div className="w-10 h-10 border-4 border-t-white border-b-white border-r-transparent rounded-full animate-spin mr-4" />{" "}
+              Data loading, please wait. . .
+            </div>
+          )}
+          {loading === false &&
+            AboutCardItems.map((aboutCardItem) => {
+              return (
+                <WhyChooseMeCard
+                  key={aboutCardItem.id}
+                  id={aboutCardItem.id}
+                  icon={ReactIcon}
+                  text={aboutCardItem.text}
+                  desc={aboutCardItem.desc}
+                />
+              );
+            })}
         </div>
       </section>
     </>

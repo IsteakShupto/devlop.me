@@ -12,7 +12,7 @@ import { ThemeContext } from "./context/ThemeContext";
 function App() {
   const { theme, toggleTheme } = useContext(ThemeContext);
 
-  console.log(theme, toggleTheme);
+  // throw new Error("This is a testing error thrower to generate render-time error!");
 
   return (
     <>
@@ -34,10 +34,11 @@ function App() {
           <Sun />
         </button>
       </div>
+
       <div className="dark:bg-black dark:text-white">
+        <Hero />
         <div className="325px sm:w-[600px] md:w-[750px] lg:w-[1000px] xl:w-[1200px] 2xl:w-[1410px] mx-auto font-grotesque overflow-hidden">
           <div>
-            <Hero />
             <WhyChooseMe />
           </div>
         </div>

@@ -3,11 +3,18 @@ import { createRoot } from "react-dom/client";
 import "./index.css";
 import App from "./App.tsx";
 import { ThemeProvider } from "./context/ThemeContext.tsx";
+import { ErrorBoundary } from "react-error-boundary";
+import FallBackUi from "./fallback/FallBackUi.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <ThemeProvider>
-      <App />
-    </ThemeProvider>
+    <ErrorBoundary
+      FallbackComponent={FallBackUi}
+      onError={(error, info) => console.log(error, info)}
+    >
+      <ThemeProvider>
+        <App />
+      </ThemeProvider>
+    </ErrorBoundary>
   </StrictMode>
 );
