@@ -1,0 +1,15 @@
+@font-face {
+  font-family: "Sporting Grotesque Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Sporting Grotesque Regular"),
+    url("SportingGrotesque-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Sporting Grotesque Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Sporting Grotesque Bold"),
+    url("SportingGrotesque-Bold.woff") format("woff");
+}

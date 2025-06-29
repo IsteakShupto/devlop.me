@@ -1,0 +1,8 @@
+@import url(https://db.onlinewebfonts.com/c/9c012a100c1e4e7c4411382d3bc15526?family=Bw+Gradual+Regular);
+@import "tailwindcss";
+@import "./assets/fonts/sporting-grotesque/style.css";
+@custom-variant dark (&:where(.dark, .dark *));
+@theme {
+  --font-grotesque: "Sporting Grotesque Regular", sans-serif;
+  --font-gradual: "Bw Gradual Regular", sans-serif;
+}
