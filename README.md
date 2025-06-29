@@ -1,5 +1,9 @@
 # Develop.me - UI design implementation using React.JS
 
+## Quick View of the Web app
+
+- To visit and check the web app right away go here 👉 https://devlopme.netlify.app/
+
 ## Prerequisites
 
 To run this project, you need to have **Node.js** and **npm** installed on your machine.
