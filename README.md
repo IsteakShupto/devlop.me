@@ -37,6 +37,8 @@ npm -v
 
 - Component-based architechture: I have divided whole UI into several parts, major twos are components and pages. Some of resuable components are placed in components and the core sections like `Home`, `About` etc. are placed in the pages section.
 
+- Toggling between dark / light mode: A floating toggle button has been added to the web app to help the user choosing to view the UI either in light or dark mode.
+
 - Responsive-ness: The whole web UI is responsiveness from mobile sized (375px at least) to 4k monitors. I have primarily used five tailwindcss breakpoints `sm`, `md`, `lg`, `xl` and `2xl`.
 
 - Animations: Several animations were added such like scaling up or down of links, button etc. Some icons are floating / bouncing to attract user-base such as call icons and scroll-down icons are motivating users to go down to explore more of the UI.
