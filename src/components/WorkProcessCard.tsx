@@ -14,11 +14,11 @@ export default function WorkProcessCard({
 }: WorkProcessCardProps) {
   return (
     <>
-      <div>
+      <article>
         <div
           className={`${
             id == 1 ? "bg-lime-300 rotate-6" : "bg-black"
-          } h-[515px] md:h-[325px] flex flex-col justify-center items-start gap-5 px-10 rounded-3xl`}
+          } w-[275px] sm:w-auto h-[515px] md:h-[325px] flex flex-col justify-center items-start gap-5 px-10 rounded-3xl`}
         >
           <div>
             <div className="flex flex-col md:flex-row justify-between">
@@ -61,7 +61,7 @@ export default function WorkProcessCard({
             </p>
           </div>
         </div>
-      </div>
+      </article>
     </>
   );
 }

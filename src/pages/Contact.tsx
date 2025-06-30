@@ -19,8 +19,8 @@ export default function Contact() {
     <>
       <section className="relative -mt-28 bg-[url('./assets/images/contact-bg.svg')] bg-bottom bg-no-repeat bg-cover min-h-screen w-full">
         <div className="325px sm:w-[600px] md:w-[750px] lg:w-[1000px] xl:w-[1200px] mx-auto font-grotesque overflow-hidden flex flex-col xl:flex-row items-center">
-          <div>
-            <div className="w-fit mx-auto xl:w-auto flex items-center justify-start pt-36 px-10 lg:px-0 lg:pt-50">
+          <article>
+            <section className="w-fit mx-auto xl:w-auto flex items-center justify-start pt-36 px-10 lg:px-0 lg:pt-50">
               <div className="animate-bounce border-2 h-10 w-10 p-0.5 rounded-full flex justify-center items-center">
                 {theme === "light" ? (
                   <img
@@ -33,8 +33,8 @@ export default function Contact() {
                 )}
               </div>
               <p className="border-2 py-2 px-4.5 rounded-3xl">Contact</p>
-            </div>
-            <div className="text-center mt-10 xl:text-left text-2xl md:text-4xl xl:text-7xl xl:mt-20">
+            </section>
+            <section className="text-center mt-10 xl:text-left text-2xl md:text-4xl xl:text-7xl xl:mt-20">
               <p>Interested in</p>
               <p className="mt-5 md:mt-7 lg:mt-10">
                 <span className="bg-black text-white rounded-2xl p-0.5">
@@ -42,9 +42,9 @@ export default function Contact() {
                 </span>{" "}
                 together?
               </p>
-            </div>
+            </section>
 
-            <div className="text-center mt-10 px-10 lg:mt-16 lg:px-0 xl:text-left">
+            <section className="text-center mt-10 px-10 lg:mt-16 lg:px-0 xl:text-left">
               <p>
                 We start every new client interaction with an in-depth discovery
               </p>
@@ -52,7 +52,7 @@ export default function Contact() {
                 call where we get to know each other and recommend the best
                 course of action.
               </p>
-            </div>
+            </section>
 
             <button className="shadow-md active:scale-95 transition-transform duration-150 flex items-center gap-2 border-2 rounded-4xl py-2 pr-1.5 cursor-pointer w-fit mx-auto mt-12 lg:mt-8 xl:ml-0">
               <div className="border-2 h-10 w-10 p-0.5 rounded-full flex justify-center items-center">
@@ -64,9 +64,9 @@ export default function Contact() {
               </div>
               <div>Schedule a Call</div>
             </button>
-          </div>
+          </article>
 
-          <div className="bg-black text-white w-[325px] md:w-[425px] p-10 rounded-2xl mt-20 xl:mt-50">
+          <article className="bg-black text-white w-[325px] md:w-[425px] p-10 rounded-2xl mt-20 xl:mt-50">
             <input
               type="text"
               placeholder="Enter your name"
@@ -86,7 +86,7 @@ export default function Contact() {
               className="border-b border-neutral-600 pb-4 outline-none w-full focus:border-teal-400"
             />
 
-            <div className="flex flex-col md:flex-row items-center mt-10 gap-4">
+            <section className="flex flex-col md:flex-row items-center mt-10 gap-4">
               <button className="shadow-md active:scale-95 transition-transform duration-150 flex items-center gap-2 border-2 rounded-4xl py-2 pr-1.5 cursor-pointer w-fit">
                 <div className="border-2 h-10 w-10 p-0.5 rounded-full flex justify-center items-center">
                   <img src={SendWhite} alt="Send icon" />
@@ -102,9 +102,9 @@ export default function Contact() {
                 </div>
                 <div className="text-nowrap pr-1">Contact me</div>
               </button>
-            </div>
+            </section>
 
-            <div className="pt-16">
+            <section className="pt-16">
               <div className="flex items-center gap-3">
                 <p>@williamrey</p>
                 <ul className="flex items-center gap-5">
@@ -122,8 +122,8 @@ export default function Contact() {
                   </li>
                 </ul>
               </div>
-            </div>
-          </div>
+            </section>
+          </article>
         </div>
       </section>
     </>

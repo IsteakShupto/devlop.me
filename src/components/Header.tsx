@@ -9,7 +9,7 @@ export default function Header() {
   return (
     <>
       <header className="pt-5">
-        <div className="flex flex-col lg:flex-row justify-between items-center">
+        <section className="flex flex-col lg:flex-row justify-between items-center">
           <h1 className="text-3xl font-gradual font-semibold mb-5 mt-5 lg:mb-0">
             DEVLOP.ME
           </h1>
@@ -39,7 +39,7 @@ export default function Header() {
               <div>Start project</div>
             </button>
           </div>
-        </div>
+        </section>
       </header>
     </>
   );

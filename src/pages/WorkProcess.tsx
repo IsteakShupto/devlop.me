@@ -37,7 +37,7 @@ export default function WorkProcess() {
   }, []);
 
   return (
-    <>
+    <article>
       <section
         className="relative 325px sm:w-[600px] md:w-[750px] lg:w-[1000px] xl:w-[1200px] 2xl:w-[1410px] min-h-screen mx-auto font-grotesque overflow-hidden -mt-1.5 bg-neutral-900 rounded-2xl text-white py-24 px-10"
         id="blog"
@@ -76,6 +76,6 @@ export default function WorkProcess() {
             })}
         </div>
       </section>
-    </>
+    </article>
   );
 }

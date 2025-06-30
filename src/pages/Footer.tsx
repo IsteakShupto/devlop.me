@@ -1,8 +1,8 @@
 export default function Footer() {
   return (
-    <>
+    <footer>
       <div className="325px sm:w-[600px] md:w-[750px] lg:w-[1000px] xl:w-[1200px] 2xl:w-[1410px] mx-auto font-grotesque bg-black rounded-2xl p-10 mt-20">
-        <div className="flex flex-col xl:flex-row justify-between">
+        <section className="flex flex-col xl:flex-row justify-between">
           <h1 className="font-gradual text-lime-300 font-semibold text-2xl mb-16 xl:mb-0">
             DEVLOP.ME
           </h1>
@@ -67,14 +67,14 @@ export default function Footer() {
               </ul>
             </div>
           </div>
-        </div>
+        </section>
 
-        <div className="text-neutral-500 flex flex-col gap-4 sm:flex-row justify-between pt-30">
+        <section className="text-neutral-500 flex flex-col gap-4 sm:flex-row justify-between pt-30">
           <p className="text-white">BESNIK</p>
           <p>&copy; devlop.me 2022</p>
           <p>PRIVACY - TERMS</p>
-        </div>
+        </section>
       </div>
-    </>
+    </footer>
   );
 }

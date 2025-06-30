@@ -12,7 +12,9 @@ import { ThemeContext } from "./context/ThemeContext";
 function App() {
   const { theme, toggleTheme } = useContext(ThemeContext);
 
-  // throw new Error("This is a testing error thrower to generate render-time error!");
+  // throw new Error(
+  //   "This is a testing error thrower to generate render-time error!"
+  // );
 
   return (
     <>
