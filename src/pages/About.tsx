@@ -65,7 +65,7 @@ export default function About() {
               <p>Previously</p>
               <p>worked on</p>
             </div>
-            <div className="px-1.5">
+            <div className="px-1.5 animate-bounce">
               <img
                 src={AboutGroup}
                 alt="about group icons, facebook, awwards etc."

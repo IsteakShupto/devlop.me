@@ -29,7 +29,7 @@ export default function Header() {
               </li>
             </ul>
             <button className="shadow-md active:scale-95 transition-transform duration-150 flex items-center gap-2 border-2 rounded-3xl py-2 pr-1.5 cursor-pointer w-fit mx-auto -mt-2.5 sm:mx-0 sm:-mt-0">
-              <div className="border-2 h-6 w-6 p-0.5 rounded-full flex justify-center items-center">
+              <div className="animate-bounce border-2 h-6 w-6 p-0.5 rounded-full flex justify-center items-center">
                 {theme === "light" ? (
                   <img src={ArrowRight} alt="Arrow right icon" />
                 ) : (

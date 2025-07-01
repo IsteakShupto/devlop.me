@@ -23,7 +23,7 @@ export default function Hero() {
       <div className="325px sm:w-[600px] md:w-[750px] lg:w-[1000px] xl:w-[1200px] 2xl:w-[1410px] mx-auto font-grotesque overflow-hidden">
         <Header />
         <Home />
-        <div className="hidden md:block absolute overflow-hidden top-136 lg:top-147 -rotate-90">
+        <div className="animate-bounce hidden md:block absolute overflow-hidden top-136 lg:top-147 -rotate-90">
           <div>
             <p className="mb-4">@williamrey</p>
             <ul className="flex gap-3">

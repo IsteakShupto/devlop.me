@@ -12,6 +12,7 @@ import { ThemeContext } from "../context/ThemeContext";
 import { Phone } from "lucide-react";
 import { ArrowDown as ArrowDownLucide } from "lucide-react";
 import SlideInFromLeftOnScrollWrapper from "../animations/SlideInFromLeftOnScrollWrapper";
+import SlideInFromRightOnScrollWrapper from "../animations/SlideInFromRightOnScrollWrapper";
 
 export default function Contact() {
   const { theme } = useContext(ThemeContext);
@@ -48,15 +49,18 @@ export default function Contact() {
               </section>
             </SlideInFromLeftOnScrollWrapper>
 
-            <section className="text-center mt-10 px-10 lg:mt-16 lg:px-0 xl:text-left">
-              <p>
-                We start every new client interaction with an in-depth discovery
-              </p>
-              <p className="mt-2">
-                call where we get to know each other and recommend the best
-                course of action.
-              </p>
-            </section>
+            <SlideInFromRightOnScrollWrapper>
+              <section className="text-center mt-10 px-10 lg:mt-16 lg:px-0 xl:text-left">
+                <p>
+                  We start every new client interaction with an in-depth
+                  discovery
+                </p>
+                <p className="mt-2">
+                  call where we get to know each other and recommend the best
+                  course of action.
+                </p>
+              </section>
+            </SlideInFromRightOnScrollWrapper>
 
             <button className="shadow-md active:scale-95 transition-transform duration-150 flex items-center gap-2 border-2 rounded-4xl py-2 pr-1.5 cursor-pointer w-fit mx-auto mt-12 lg:mt-8 xl:ml-0">
               <div className="border-2 h-10 w-10 p-0.5 rounded-full flex justify-center items-center">

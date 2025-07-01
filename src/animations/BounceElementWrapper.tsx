@@ -14,7 +14,8 @@ export default function BounceElementWrapper({
         transition: {
           type: "spring",
           stiffness: 300,
-          damping: 12,
+          damping: 8,
+          mass: 0.6,
         },
       }}
       initial={{ y: 0, scale: 1 }}
