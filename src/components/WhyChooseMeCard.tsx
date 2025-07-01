@@ -22,7 +22,7 @@ export default function WhyChooseMeCard({
             : ""
         }`}
       >
-        <div className="bg-neutral-900 h-[325px] flex flex-col justify-center items-start gap-5 px-10 rounded-3xl">
+        <div className="bg-neutral-900 hover:bg-neutral-700 h-[325px] flex flex-col justify-center items-start gap-5 px-10 rounded-3xl">
           <img src={icon} alt="" />
           <div>
             <h3>{text}</h3>

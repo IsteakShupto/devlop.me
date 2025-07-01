@@ -20,8 +20,8 @@ export default function WorkProcessCard({
           <div
             className={`${
               id == 1
-                ? "bg-lime-300 rotate-6 transition-transform duration-100 hover:rotate-0"
-                : "bg-black"
+                ? "bg-lime-300 rotate-6 transition-transform duration-100 hover:bg-lime-400 hover:rotate-0"
+                : "bg-black hover:bg-neutral-800"
             } w-[275px] sm:w-auto h-[515px] md:h-[325px] flex flex-col justify-center items-start gap-5 px-10 rounded-3xl`}
           >
             <div>
