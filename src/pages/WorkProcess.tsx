@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import ArrowDownWhite from "../assets/icons/arrow-down-white.svg";
 import WorkProcessCard from "../components/WorkProcessCard";
+import SlideInFromLeftOnScrollWrapper from "../animations/SlideInFromLeftOnScrollWrapper";
 
 const WorkProcessCardItems = [
   {
@@ -51,9 +52,11 @@ export default function WorkProcess() {
           </div>
         </div>
 
-        <div className="text-2xl md:text-3xl lg:text-4xl xl:text-6xl text-center">
-          <h1>My Work Process</h1>
-        </div>
+        <SlideInFromLeftOnScrollWrapper>
+          <div className="text-2xl md:text-3xl lg:text-4xl xl:text-6xl text-center">
+            <h1>My Work Process</h1>
+          </div>
+        </SlideInFromLeftOnScrollWrapper>
 
         {loading === true && (
           <div className="flex justify-center items-center w-full min-h-[220px] xl:mt-50">

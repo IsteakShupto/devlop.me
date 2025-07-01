@@ -1,3 +1,5 @@
+import SlideInFromRightOnScrollWrapper from "../animations/SlideInFromRightOnScrollWrapper";
+
 export default function Footer() {
   return (
     <footer>
@@ -8,7 +10,9 @@ export default function Footer() {
           </h1>
 
           <div>
-            <h1 className="text-white text-3xl sm:text-5xl">As You Can</h1>
+            <SlideInFromRightOnScrollWrapper>
+              <h1 className="text-white text-3xl sm:text-5xl">As You Can</h1>
+            </SlideInFromRightOnScrollWrapper>
 
             <div className="text-white grid grid-cols-1 md:gap-0 md:grid-cols-3 mt-20">
               <ul>

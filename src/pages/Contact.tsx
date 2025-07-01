@@ -11,6 +11,7 @@ import { useContext } from "react";
 import { ThemeContext } from "../context/ThemeContext";
 import { Phone } from "lucide-react";
 import { ArrowDown as ArrowDownLucide } from "lucide-react";
+import SlideInFromLeftOnScrollWrapper from "../animations/SlideInFromLeftOnScrollWrapper";
 
 export default function Contact() {
   const { theme } = useContext(ThemeContext);
@@ -34,15 +35,18 @@ export default function Contact() {
               </div>
               <p className="border-2 py-2 px-4.5 rounded-3xl">Contact</p>
             </section>
-            <section className="text-center mt-10 xl:text-left text-2xl md:text-4xl xl:text-7xl xl:mt-20">
-              <p>Interested in</p>
-              <p className="mt-5 md:mt-7 lg:mt-10">
-                <span className="bg-black text-white rounded-2xl p-0.5">
-                  work
-                </span>{" "}
-                together?
-              </p>
-            </section>
+
+            <SlideInFromLeftOnScrollWrapper>
+              <section className="text-center mt-10 xl:text-left text-2xl md:text-4xl xl:text-7xl xl:mt-20">
+                <p>Interested in</p>
+                <p className="mt-5 md:mt-7 lg:mt-10">
+                  <span className="bg-black text-white rounded-2xl p-0.5">
+                    work
+                  </span>{" "}
+                  together?
+                </p>
+              </section>
+            </SlideInFromLeftOnScrollWrapper>
 
             <section className="text-center mt-10 px-10 lg:mt-16 lg:px-0 xl:text-left">
               <p>

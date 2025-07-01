@@ -4,6 +4,7 @@ import { useContext } from "react";
 import { ThemeContext } from "../context/ThemeContext";
 import { ArrowDown } from "lucide-react";
 import SlideInFromLeftOnScrollWrapper from "../animations/SlideInFromLeftOnScrollWrapper";
+import SlideInFromRightOnScrollWrapper from "../animations/SlideInFromRightOnScrollWrapper";
 
 export default function About() {
   const { theme } = useContext(ThemeContext);
@@ -47,15 +48,17 @@ export default function About() {
             </div>
           </SlideInFromLeftOnScrollWrapper>
 
-          <div className="mt-10 px-10 lg:mt-20 lg:px-0 text-center">
-            <p>
-              We start every new client interaction with an in-depth discovery
-              call where we get
-            </p>
-            <p className="mt-2">
-              to know each other and recommend the best course of action.
-            </p>
-          </div>
+          <SlideInFromRightOnScrollWrapper>
+            <div className="mt-10 px-10 lg:mt-20 lg:px-0 text-center">
+              <p>
+                We start every new client interaction with an in-depth discovery
+                call where we get
+              </p>
+              <p className="mt-2">
+                to know each other and recommend the best course of action.
+              </p>
+            </div>
+          </SlideInFromRightOnScrollWrapper>
 
           <div className="mt-10 lg:mt-20 flex flex-col md:flex-row items-center gap-10">
             <div className="text-3xl text-nowrap px-10 lg:px-0">

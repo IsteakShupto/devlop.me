@@ -1,3 +1,5 @@
+import CardWrapper from "../animations/CardWrapper";
+
 type AboutCardProps = {
   id: number;
   icon: string;
@@ -12,8 +14,14 @@ export default function WhyChooseMeCard({
   desc,
 }: AboutCardProps) {
   return (
-    <>
-      <div className={`${id === 1 ? "lg:rotate-12" : ""}`}>
+    <CardWrapper>
+      <div
+        className={`${
+          id === 1
+            ? "lg:rotate-12 transition-transform duration-100 hover:rotate-0"
+            : ""
+        }`}
+      >
         <div className="bg-neutral-900 h-[325px] flex flex-col justify-center items-start gap-5 px-10 rounded-3xl">
           <img src={icon} alt="" />
           <div>
@@ -22,6 +30,6 @@ export default function WhyChooseMeCard({
           </div>
         </div>
       </div>
-    </>
+    </CardWrapper>
   );
 }

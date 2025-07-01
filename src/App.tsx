@@ -37,7 +37,7 @@ function App() {
         </button>
       </div>
 
-      <div className="dark:bg-black dark:text-white">
+      <div className="dark:bg-black dark:text-white overflow-x-hidden">
         <Hero />
         <div className="325px sm:w-[600px] md:w-[750px] lg:w-[1000px] xl:w-[1200px] 2xl:w-[1410px] mx-auto font-grotesque overflow-hidden">
           <div>

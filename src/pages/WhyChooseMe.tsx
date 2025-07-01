@@ -5,6 +5,7 @@ import WhyChooseMeCard from "../components/WhyChooseMeCard";
 import ReactIcon from "../assets/icons/react.svg";
 import { useEffect, useState } from "react";
 import SlideInFromLeftOnScrollWrapper from "../animations/SlideInFromLeftOnScrollWrapper";
+import SlideInFromRightOnScrollWrapper from "../animations/SlideInFromRightOnScrollWrapper";
 
 const AboutCardItems = [
   {
@@ -56,20 +57,22 @@ export default function WhyChooseMe() {
             </div>
           </SlideInFromLeftOnScrollWrapper>
 
-          <div className="text-right mt-10 lg:mt-40">
-            <p>Building the worlds best marketing Your</p>
-            <p className="mb-4 mt-2">
-              trusted partner for strategy, design, and dev.
-            </p>
-            <div className="flex justify-end gap-4 border-t-2 border-neutral-700 py-4">
-              <div className="border-2 h-10 w-10 p-0.5 rounded-full flex justify-center items-center">
-                <img src={ArrowLeftWhite} alt="Arrow left icon" />
-              </div>
-              <div className="border-2 h-10 w-10 p-0.5 rounded-full flex justify-center items-center">
-                <img src={ArrowRightWhite} alt="Arrow right icon" />
+          <SlideInFromRightOnScrollWrapper>
+            <div className="text-right mt-10 lg:mt-40">
+              <p>Building the worlds best marketing Your</p>
+              <p className="mb-4 mt-2">
+                trusted partner for strategy, design, and dev.
+              </p>
+              <div className="flex justify-end gap-4 border-t-2 border-neutral-700 py-4">
+                <div className="border-2 h-10 w-10 p-0.5 rounded-full flex justify-center items-center">
+                  <img src={ArrowLeftWhite} alt="Arrow left icon" />
+                </div>
+                <div className="border-2 h-10 w-10 p-0.5 rounded-full flex justify-center items-center">
+                  <img src={ArrowRightWhite} alt="Arrow right icon" />
+                </div>
               </div>
             </div>
-          </div>
+          </SlideInFromRightOnScrollWrapper>
         </div>
 
         <div className="flex flex-col lg:flex-row justify-between gap-5 mt-5 mb-10">
