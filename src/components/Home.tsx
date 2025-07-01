@@ -2,6 +2,7 @@ import { useContext } from "react";
 import Call from "../assets/icons/call.svg";
 import { ThemeContext } from "../context/ThemeContext";
 import { Phone } from "lucide-react";
+import FadeInWrapper from "../animations/FadeInWrapper";
 
 export default function Home() {
   const { theme } = useContext(ThemeContext);
@@ -9,16 +10,19 @@ export default function Home() {
   return (
     <>
       <div className="mb-40 xl:mb-20" id="home">
-        <div className="text-center text-2xl md:text-left md:text-3xl lg:text-7xl mt-24 lg:mt-38">
-          <p className="duration-300">
-            Trusted{" "}
-            <span className="bg-black text-white rounded-lg">Partner</span> for
-          </p>
-          <p className="mt-3 md:mt-7 lg:mt-18">
-            Your Website{" "}
-            <span className="bg-black text-white rounded-lg">Develop.</span>
-          </p>
-        </div>
+        <FadeInWrapper>
+          <div className="text-center text-2xl md:text-left md:text-3xl lg:text-7xl mt-24 lg:mt-38">
+            <p className="duration-300">
+              Trusted{" "}
+              <span className="bg-black text-white rounded-lg">Partner</span>{" "}
+              for
+            </p>
+            <p className="mt-3 md:mt-7 lg:mt-18">
+              Your Website{" "}
+              <span className="bg-black text-white rounded-lg">Develop.</span>
+            </p>
+          </div>
+        </FadeInWrapper>
 
         <div className="mt-10 text-center md:text-left lg:mt-26 lg:ml-96">
           <p>Building the worlds best marketing websites for over a decade.</p>

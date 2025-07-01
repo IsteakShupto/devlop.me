@@ -4,6 +4,7 @@ import ArrowRightWhite from "../assets/icons/arrow-right-white.svg";
 import WhyChooseMeCard from "../components/WhyChooseMeCard";
 import ReactIcon from "../assets/icons/react.svg";
 import { useEffect, useState } from "react";
+import SlideInFromLeftOnScrollWrapper from "../animations/SlideInFromLeftOnScrollWrapper";
 
 const AboutCardItems = [
   {
@@ -38,18 +39,22 @@ export default function WhyChooseMe() {
     <>
       <section className="bg-black text-white rounded-4xl p-10" id="portfolio">
         <div className="lg:text-left lg:flex justify-between items-center">
-          <div>
-            <div className="flex items-center">
-              <div className="animate-bounce border-2 h-10 w-10 p-0.5 rounded-full flex justify-center items-center">
-                <img src={ArrowDownWhite} alt="Arrow down icon" />
+          <SlideInFromLeftOnScrollWrapper>
+            <div>
+              <div className="flex items-center">
+                <div className="animate-bounce border-2 h-10 w-10 p-0.5 rounded-full flex justify-center items-center">
+                  <img src={ArrowDownWhite} alt="Arrow down icon" />
+                </div>
+                <p className="border-2 py-2 px-4.5 rounded-3xl">
+                  Why choose me
+                </p>
               </div>
-              <p className="border-2 py-2 px-4.5 rounded-3xl">Why choose me</p>
+              <div className="text-2xl mt-10 md:text-5xl">
+                <p>My Extensive</p>
+                <p className="mt-2 md:mt-5">List of Skills</p>
+              </div>
             </div>
-            <div className="text-2xl mt-10 md:text-5xl">
-              <p>My Extensive</p>
-              <p className="mt-2 md:mt-5">List of Skills</p>
-            </div>
-          </div>
+          </SlideInFromLeftOnScrollWrapper>
 
           <div className="text-right mt-10 lg:mt-40">
             <p>Building the worlds best marketing Your</p>

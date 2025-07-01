@@ -3,6 +3,7 @@ import AboutGroup from "../assets/images/about-group.svg";
 import { useContext } from "react";
 import { ThemeContext } from "../context/ThemeContext";
 import { ArrowDown } from "lucide-react";
+import SlideInFromLeftOnScrollWrapper from "../animations/SlideInFromLeftOnScrollWrapper";
 
 export default function About() {
   const { theme } = useContext(ThemeContext);
@@ -28,20 +29,23 @@ export default function About() {
             </div>
             <p className="border-2 py-2 px-4.5 rounded-3xl">About</p>
           </div>
-          <div className="text-center text-2xl md:text-4xl lg:text-7xl mt-20">
-            <p>
-              I&apos;ve been{" "}
-              <span className="bg-black text-white rounded-2xl p-0.5">
-                Developing
-              </span>
-            </p>
-            <p className="mt-5 md:mt-7 lg:mt-14">
-              Websites since{" "}
-              <span className="bg-black text-white rounded-2xl p-0.5">
-                2013
-              </span>
-            </p>
-          </div>
+
+          <SlideInFromLeftOnScrollWrapper>
+            <div className="text-center text-2xl md:text-4xl lg:text-7xl mt-20">
+              <p>
+                I&apos;ve been{" "}
+                <span className="bg-black text-white rounded-2xl p-0.5">
+                  Developing
+                </span>
+              </p>
+              <p className="mt-5 md:mt-7 lg:mt-14">
+                Websites since{" "}
+                <span className="bg-black text-white rounded-2xl p-0.5">
+                  2013
+                </span>
+              </p>
+            </div>
+          </SlideInFromLeftOnScrollWrapper>
 
           <div className="mt-10 px-10 lg:mt-20 lg:px-0 text-center">
             <p>
