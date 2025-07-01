@@ -8,7 +8,7 @@ export default function Home() {
 
   return (
     <>
-      <div className="mb-40" id="home">
+      <div className="mb-40 xl:mb-20" id="home">
         <div className="text-center text-2xl md:text-left md:text-3xl lg:text-7xl mt-24 lg:mt-38">
           <p className="duration-300">
             Trusted{" "}

@@ -17,7 +17,7 @@ export default function Contact() {
 
   return (
     <>
-      <section className="relative -mt-28 bg-[url('./assets/images/contact-bg.svg')] bg-bottom bg-no-repeat bg-cover min-h-screen w-full">
+      <section className="relative -mt-28 bg-[url('./assets/images/contact-bg.svg')] bg-bottom bg-no-repeat bg-cover min-h-screen xl:pb-15 xl:min-h-[35vh] xl:bg-[30%] w-full">
         <div className="325px sm:w-[600px] md:w-[750px] lg:w-[1000px] xl:w-[1200px] mx-auto font-grotesque overflow-hidden flex flex-col xl:flex-row items-center">
           <article>
             <section className="w-fit mx-auto xl:w-auto flex items-center justify-start pt-36 px-10 lg:px-0 lg:pt-50">

@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
     <footer>
-      <div className="325px sm:w-[600px] md:w-[750px] lg:w-[1000px] xl:w-[1200px] 2xl:w-[1410px] mx-auto font-grotesque bg-black rounded-2xl p-10 mt-20">
+      <div className="325px sm:w-[600px] md:w-[750px] lg:w-[1000px] xl:w-[1200px] 2xl:w-[1410px] mx-auto font-grotesque bg-black rounded-2xl p-10 mt-20 xl:mt-0">
         <section className="flex flex-col xl:flex-row justify-between">
           <h1 className="font-gradual text-lime-300 font-semibold text-2xl mb-16 xl:mb-0">
             DEVLOP.ME

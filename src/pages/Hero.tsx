@@ -19,7 +19,7 @@ export default function Hero() {
   const { theme } = useContext(ThemeContext);
 
   return (
-    <section className="bg-[url('./assets/images/hero-bg.svg')] bg-center bg-no-repeat bg-cover min-h-[700px] sm:min-h-screen w-full">
+    <section className="bg-[url('./assets/images/hero-bg.svg')] bg-center bg-no-repeat bg-cover min-h-[700px] sm:min-h-screen xl:min-h-[60%] w-full">
       <div className="325px sm:w-[600px] md:w-[750px] lg:w-[1000px] xl:w-[1200px] 2xl:w-[1410px] mx-auto font-grotesque overflow-hidden">
         <Header />
         <Home />

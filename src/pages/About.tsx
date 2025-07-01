@@ -10,7 +10,7 @@ export default function About() {
   return (
     <>
       <section
-        className="relative -mt-16 bg-[url('./assets/images/aboutbg.svg')] bg-top bg-no-repeat bg-cover min-h-screen w-full"
+        className="relative -mt-16 bg-[url('./assets/images/aboutbg.svg')] bg-top bg-no-repeat bg-cover w-full"
         id="about"
       >
         <div className="325px sm:w-[600px] md:w-[750px] lg:w-[1000px] xl:w-[1100px] mx-auto font-grotesque overflow-hidden">
